@@ -1,5 +1,14 @@
 # SQL Data Types and Functions Cheat Sheet
+## Table of Contents
 
+- [Numeric Data Types](#numeric-data-types)
+- [Date and Time Data Types](#date-and-time-data-types)
+- [String Data Types](#string-data-types)
+- [Arithmetic Functions](#arithmetic-functions)
+- [String Functions](#string-functions)
+- [Date and Time Functions](#date-and-time-functions)
+- [Aggregate Functions](#aggregate-functions)
+  
 ## Numeric Data Types
 
 **TINYINT:** A very small integer.
@@ -112,7 +121,7 @@ Variable length; 1 byte or 2 bytes + binary length
 
  1, 2, 3, 4, or 8 bytes (depending on the number of set members, max 64 members)
 
-## Arithmetic Function
+## Arithmetic Functions
 
 **ABS(x):** Returns the absolute value of x, converting negative numbers to positive.
 
@@ -156,7 +165,7 @@ SELECT name, ABS(balance) AS absolute_balance
 FROM bankaccount;
 ```
 
-## STRING  function
+## STRING  functions
 
 **CONCAT(str1, str2, ...):** Concatenates multiple strings into one.
 
@@ -220,7 +229,7 @@ FROM bankaccount;
 
 `SELECT TRIM(BOTH 'x' FROM 'xxxHello World!xxx') AS trimmed_string;`
 
-## DATE and TIME function
+## DATE and TIME functions
 
 **NOW():** Returns the current date and time.
 
@@ -278,3 +287,32 @@ FROM bankaccount;
 
     `SELECT DATE_FORMAT(NOW(), '%Y-%m-%d %H:%i:%s');`
 
+## Aggregate functions
+
+**COUNT:** number f entries in a column
+
+**MIN:** smallestvalue in column
+
+**MAX:** maximum value in a colunm
+
+**SUM:** to calculate sum
+
+**AVG:** for calculating average
+
+**Example:**
+
+`SELECT COUNT(marks) FROM student_marks;`
+
+`SELECT COUNT(*) FROM student_marks;`
+
+`SELECT COUNT(DISTINCT Name) FROM student_marks;`
+
+`SELECT COUNT(marks) AS result FROM student_marks;`
+
+`SELECT SUM(marks) FROM student_marks;`
+
+`SELECT AVG(marks) FROM student_marks;`
+
+`SELECT MAX(marks) FROM student_marks;`
+
+`SELECT MIN(marks) FROM student_marks;`

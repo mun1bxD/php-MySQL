@@ -31,7 +31,7 @@
 - [GROUP BY & HAVING](#group-by--having)
 - [UNION & UNION ALL](#union--union-all)
 - [IF & CASE](#if--case)
-- [ALTER Command](#alter-command)
+- [ALTER](#alter)
 - [DROP and TRUNCATE](#drop-and-truncate)
 - [VIEW](#view)
 - [INDEX](#index)
@@ -721,7 +721,7 @@ WHEN marks>40 && marks<60 THEN "c"
 FROM student_marks;
 ```
 
-### ALTER COMMAND
+### ALTER
 
 The ALTER command in MySQL is used to modify the structure of an existing table.
 

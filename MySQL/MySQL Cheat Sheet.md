@@ -2,7 +2,7 @@
 
 ## Table of Contents
 - [Creating a Database](#for-creating-database)
-- [Creating a Table](#creating-a-table)
+- [Creating a Table](#creating-table)
 - [Using a Specific Database](#using-a-specific-database)
 - [Inserting Values into a Table](#inserting-values-into-a-table)
 - [Constraints in MySQL](#constraints-in-mysql)
@@ -24,7 +24,6 @@
 - [DISTINCT](#distinct)
 - [NULL and NOT NULL](#null-and-not-null)
 - [LIMIT and OFFSET](#limit-and-offset)
-- [Aggregate Functions](#aggregate-functions)
 - [UPDATE](#update)
 - [COMMIT & ROLLBACK](#commit--rollback)
 - [PRIMARY KEY and FOREIGN KEY Constraints](#primary-key-and-foreign-key-constraints)
@@ -74,7 +73,7 @@ create table student(
 
 `Show tables;`
 
-### Inserting value into table
+### Inserting values into a table
 
 `INSERT INTO table_name (column1,column2,column3) VALUES(VALUE1, VALUE2,VALUE3);`
 
@@ -133,7 +132,7 @@ city varchar(100) NOT NULL,
 );
 ```
 
-### Inserting in table having contraints
+### inserting-in-table-with-constraints
 
 ```
 insert INTO student_perssonal_info(city,gender,age,ph_number,father_name)
@@ -151,7 +150,7 @@ value("sydney","M",19,112320132);
 
 If ph_number is not entered it will add a default value of not entered.
 
-### Showing column in sql
+### Showing columns
 
 `SELECT column1,column2,column3, FROM TABLE_NAME;`
 
@@ -159,7 +158,7 @@ If ph_number is not entered it will add a default value of not entered.
 
 `SELECT Name, Roll_No FROM student;`
 
-### Show all table
+### Showing all tables
 
 `SELECT * FROM TABLE_NAME;`
 
@@ -407,46 +406,6 @@ This query skip first two line.
 `SELECT * FROM student WHERE Admission_Date > '2021-01-10' LIMIT 0,3;`
 
 Check first three
-
-### Aggregate function
-
-- COUNT:number f entries in a column
-
-- MIN:smallestvalue in column
-
-- MAX:maximum value in a colunm
-
-- SUM:to calculate sum
-
-- AVG:for calculating average
-
-`SELECT COUNT  column_name FROM table_name WHERE condition;`
-
-**Example:**
-
-Total records
-
-`SELECT COUNT(marks) FROM student_marks;`
-
-Or
-
-`SELECT COUNT(*) FROM student_marks;`
-
-To show distinct name
-
-`SELECT COUNT(DISTINCT Name) FROM student_marks;`
-
-To show change column name
-
-- `SELECT COUNT(marks) AS result FROM student_marks;`
-
-- `SELECT SUM(marks) FROM student_marks;`
-
-- `SELECT AVG(marks) FROM student_marks;`
-
-- `SELECT MAX(marks) FROM student_marks;`
-
-- `SELECT MIN(marks) FROM student_marks;`
 
 ### UPDATE
 

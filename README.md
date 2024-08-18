@@ -25,21 +25,31 @@ This repository is a collection of essential PHP and MySQL resources designed to
 
 The repository is organized as follows:
 
-```
-php-MySQL/
+```php-MySQL/
 │
-├── CRUD_Project/              # Contains the CRUD application project
-│   ├── AddPage.php            # Script to add records
-│   ├── UpdatePage.php         # Script to update records
-│   ├── DeletePage.php         # Script to delete records
-│   ├── MainPage.php           # Main page to view and manage records
-│   └── css/                   # Stylesheets for the CRUD project
-│       └── style.css          # CSS file for CRUD project styling
+├── CRUD_Project/                      # Contains the CRUD application project
+│   ├── css/                           # Stylesheets for the CRUD project
+│   │   ├── AddPageStyle.css           # CSS for Add Page styling
+│   │   ├── DeletePageStyle.css        # CSS for Delete Page styling
+│   │   ├── Style.css                  # General styling for the project
+│   │   ├── UpdatePageStyle.css        # CSS for Update Page styling
+│   │
+│   ├── AddPage.php                    # Script to add records
+│   ├── AddRecord.php                  # Script to handle adding records to the database
+│   ├── DeleteData.php                 # Script to handle deleting records from the database
+│   ├── DeletePage.php                 # Script to delete records
+│   ├── MainPage.php                   # Main page to view and manage records
+│   ├── UpdateData.php                 # Script to handle updating records in the database
+│   ├── UpdatePage.php                 # Script to update records
 │
-├── mysql/                     # Contains MySQL cheat sheet and related resources
-│   └── mysql_cheat_sheet.md   # Comprehensive MySQL commands and syntax guide
+├── MySQL/                             # Contains MySQL resources
+│   ├── DataTypes_and_Functions.md     # Guide on MySQL data types and functions
+│   ├── MySQL_Cheat_Sheet.md           # Comprehensive MySQL commands and syntax guide
 │
-└── README.md                  # This README file
+├── NormalPHPFile.php                  # Place any standalone PHP file outside the folder
+│
+└── README.md                          # This README file
+
 ```
 
 ## MySQL Cheat Sheet
@@ -86,7 +96,7 @@ To run the projects in this repository locally:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/php-MySQL.git
+   git clone https://github.com/mun1bxD/php-MySQL.git
    ```
 2. **Set up the MySQL database**:
    - Import the SQL file provided in the project to create the necessary tables.

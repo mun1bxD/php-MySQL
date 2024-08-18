@@ -21,20 +21,20 @@ The repository is organized as follows:
 
 ```php-MySQL/
 │
-├── CRUD_Project/                      # Contains the CRUD application project
-│   ├── css/                           # Stylesheets for the CRUD project
-│   │   ├── AddPageStyle.css           # CSS for Add Page styling
-│   │   ├── DeletePageStyle.css        # CSS for Delete Page styling
-│   │   ├── Style.css                  # General styling for the project
-│   │   ├── UpdatePageStyle.css        # CSS for Update Page styling
+├── CRUD_Project/                      
+│   ├── css/                           
+│   │   ├── AddPageStyle.css           
+│   │   ├── DeletePageStyle.css       
+│   │   ├── Style.css                  
+│   │   ├── UpdatePageStyle.css        
 │   │
-│   ├── AddPage.php                    # Script to add records
-│   ├── AddRecord.php                  # Script to handle adding records to the database
-│   ├── DeleteData.php                 # Script to handle deleting records from the database
-│   ├── DeletePage.php                 # Script to delete records
-│   ├── MainPage.php                   # Main page to view and manage records
-│   ├── UpdateData.php                 # Script to handle updating records in the database
-│   ├── UpdatePage.php                 # Script to update records
+│   ├── AddPage.php                    
+│   ├── AddRecord.php                  
+│   ├── DeleteData.php                 
+│   ├── DeletePage.php                
+│   ├── MainPage.php                   
+│   ├── UpdateData.php                 
+│   ├── UpdatePage.php                
 │
 ├── MySQL/                             # Contains MySQL resources
 │   ├── DataTypes_and_Functions.md     # Guide on MySQL data types and functions

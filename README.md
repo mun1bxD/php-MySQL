@@ -1,7 +1,3 @@
-Here's a template for your README file that covers the key aspects of your PHP-MySQL repository. You can modify and expand it according to your specific project details:
-
----
-
 # PHP-MySQL Repository
 
 Welcome to the **PHP-MySQL** repository! This repository contains essential resources and projects for working with PHP and MySQL, including a comprehensive MySQL cheat sheet and a CRUD application project.
@@ -14,8 +10,6 @@ Welcome to the **PHP-MySQL** repository! This repository contains essential reso
 4. [CRUD Project](#crud-project)
 5. [Basic PHP Examples](#basic-php-examples)
 6. [Installation and Setup](#installation-and-setup)
-7. [Contributing](#contributing)
-8. [License](#license)
 
 ## Introduction
 

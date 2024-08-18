@@ -36,14 +36,13 @@ The repository is organized as follows:
 │   ├── UpdateData.php                 
 │   ├── UpdatePage.php                
 │
-├── MySQL/                             # Contains MySQL resources
-│   ├── DataTypes_and_Functions.md     # Guide on MySQL data types and functions
-│   ├── MySQL_Cheat_Sheet.md           # Comprehensive MySQL commands and syntax guide
+├── MySQL/                             
+│   ├── DataTypes_and_Functions.md    
+│   ├── MySQL_Cheat_Sheet.md          
 │
-├── NormalPHPFile.php                  # Place any standalone PHP file outside the folder
+├── NormalPHPFile.php                  
 │
-└── README.md                          # This README file
-
+└── README.md                          
 ```
 
 ## MySQL Cheat Sheet
